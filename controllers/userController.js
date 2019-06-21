@@ -1,15 +1,15 @@
 const db = require("../models");
 
 module.exports = {
-  //Takes in an e-mail, checks for an existing account on that e-mail, if none exists create the account and return that, otherwise return false.
+  //Takes in a name, checks for an existing account with that name, if none exists create an account and return that, otherwise return false.
   // newUser: (req, res) => {
-  //   db.User.find({ email: req.body.email })
+  //   db.User.find({ name: req.body.email })
   //     .then(dbuser => {
   //       //Does a user with this e-mail exist already?
   //       if (dbuser.length) {
   //         return false; //If so return false
   //       } else {
-  //         return db.User.create({ email: req.body.email }); //if not create the user and return the user object.
+  //         return db.User.create({ name: req.body.email }); //if not create the user and return the user object.
   //       }
   //     })
   //     .then(dbuser => res.json(dbuser))
